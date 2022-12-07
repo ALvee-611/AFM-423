@@ -13,7 +13,7 @@ y = as.factor(leukemia$class)
 X = as.matrix(leukemia[, -1])
 
 # a)
-set.seed(20745516)
+set.seed(42)
 
 # b) 
 # Ridge penalty
@@ -111,7 +111,7 @@ str(College)
 
 cv_5 <- trainControl(method = "cv", number = 5)
 
-idn = 123456789
+idn = 42
 set.seed(idn)
 
 # An additive linear model.
