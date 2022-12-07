@@ -139,7 +139,7 @@ knitr::kable(results,caption = "Summary of the test and error rates of the model
 
 # Answer: 3
 
-set.seed(123456789)
+set.seed(42)
 
 make_sim_data = function(n_obs = 25) {
   x1 = runif(n = n_obs, min = 0, max = 2)
