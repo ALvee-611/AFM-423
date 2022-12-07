@@ -14,7 +14,7 @@ sim_tst = mlbench.spirals(n = 10000, cycles = 1.5, sd = 0.125)
 sim_tst = data.frame(sim_tst$x, class = as.factor(sim_tst$classes))
 
 
-uin = 20745516
+uin = 42
 set.seed(uin)
 
 cv_5 = trainControl(method = "cv", number = 5)
@@ -113,7 +113,7 @@ knitr::kable(results,align="c",caption = "Summary of the 4 models")
 library(ISLR)
 Hitters = na.omit(Hitters)
 
-uin = 20745516
+uin = 42
 set.seed(uin)
 hit_idx = createDataPartition(Hitters$Salary, p = 0.6, list = FALSE)
 hit_trn = Hitters[hit_idx,]
@@ -180,7 +180,7 @@ knitr::kable(results_2,align="c",caption = "Summary of the 3 models")
 
 library(ISLR)
 library(caret)
-uin = 20745516
+uin = 42
 set.seed(uin)
 oj_idx = createDataPartition(OJ$Purchase, p = 0.5, list = FALSE)
 oj_trn = OJ[oj_idx,]
