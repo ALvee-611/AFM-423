@@ -3,4 +3,4 @@ This course introduces the use of advanced econometric/statistical methods in st
 
 This repository contains all the code assignments from this course. 
 
-[Note: we used R for this script]
+[Note: we used R for this course]
